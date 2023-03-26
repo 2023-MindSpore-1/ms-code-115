@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@sftp://xuezhe@10.112.250.80:22/mnt/sdb/envs/xuezhe_env/anaconda3/bin/python3.8">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$/../../../python" remote-root="/mnt/sdb/mindspore/cl/python" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

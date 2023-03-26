@@ -1,0 +1,63 @@
+Global:
+  pretrained_model: ./output/
+  pretrain_epochs:
+  output: ./output/
+  epochs:
+  num_classes:
+  eval_interval:
+
+Data:
+  Dataset:
+    name:
+    normalize:
+    miss_rate:
+    root_path: ./dataset
+    num_view:
+    num_sample:
+  
+  DataLoader:
+    batch_size:
+    sampler:
+      name:
+
+Arch:
+  name:
+  encoder:
+    dims:
+
+    activate:
+  decoder:
+    pre_bn:
+    pre_activate:
+    dims:
+
+    activate:
+  fusion:
+    dims:
+
+Loss:
+  - MSELoss:
+      weight:
+  - CtrLoss:
+      weight:
+      sigma:
+      taup:
+      taus:
+      num_classes:
+  - IntraLoss:
+      weight:
+      q:
+      lam:
+  - InterLoss:
+      weight:
+      q:
+      lam:
+
+
+
+
+Optimizer:
+  name:
+  lr:
+Metric:
+  - Accuracy:
